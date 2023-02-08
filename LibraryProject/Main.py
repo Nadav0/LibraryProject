@@ -3,8 +3,10 @@ import ListSplit
 import dt
 import Borrow
 
+
 def start():
-    while(True):
+    while True:
+        print("------------------------------------------------------")
         print("        Welcome to Nadav's Official Books Library     ")
         print("------------------------------------------------------")
         print("Enter 1. To Display")
@@ -12,25 +14,29 @@ def start():
         print("Enter 3. To return a book")
         print("Enter 4. To exit")
         try:
-            a=int(input("Select a choice from 1-4: "))
+            a = int(input("Select a choice from 1-4: "))
             print()
-            if(a==1):
-                with open("stock.txt","r") as f:
-                    lines=f.read()
+            if a == 1:
+                with open("stock.txt", "r") as f:
+                    lines = f.read()
                     print(lines)
-                    print ()
-   
-            elif(a==2):
+                    print()
+
+            elif a == 2:
                 ListSplit.listSplit()
                 Borrow.borrowBook()
-            elif(a==3):
+            elif a == 3:
                 ListSplit.listSplit()
                 Return.returnBook()
-            elif(a==4):
-                print("Thank you for using library management system")
+            elif a == 4:
+                print("------------------------------------------------------")
+                print("Thank you for using Nadav's Official Books Library")
+                print("------------------------------------------------------")
                 break
             else:
                 print("Please enter a valid choice from 1-4")
         except ValueError:
             print("Please input as suggested.")
+
+
 start()

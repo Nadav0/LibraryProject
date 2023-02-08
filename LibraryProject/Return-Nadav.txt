@@ -1,8 +1,0 @@
-                Library Management System 
-                   Returned By: Nadav
-    Date: 2023-02-08    Time:10:17:27.618103
-
-S.N.		Bookname		Cost
-3		Programming With Python		$1.5
-					Fine: $2
-					Total: $3.5

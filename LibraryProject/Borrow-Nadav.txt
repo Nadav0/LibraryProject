@@ -1,6 +1,0 @@
-               Library Management System  
-                   Borrowed By: Nadav Or
-    Date: 2023-02-08    Time:10:17:05.583004
-
-S.N. 		 Bookname 	      Authorname 
-1. 		Programming With Python		  John Smith
